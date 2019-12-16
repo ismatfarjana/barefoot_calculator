@@ -13,13 +13,11 @@ Input simply requires the monthly amount of income (which will not be saved or u
 
 It also shows the long-term amount of the savings.
 
-
 ## Setup on Local Machine!
 
 - `git clone git@github.com:ismatfarjana/barefoot_calculator.git`
 - `cd barefoot_calculator`
 - run `bundle install`
-
 
 ## How to use
 
@@ -27,20 +25,16 @@ It also shows the long-term amount of the savings.
 - `ruby barefoot_calculator.rb`
 - Provide your monthly income
 
-
 ## Algorithm used
 
-``` daily expences = (income X 60) / 100```
-``` splurge = (income X 10) / 100```
-``` smile = (income X 10) / 100```
-``` fire ext = (income X 20) / 100```
-
-
+- ``` daily expences = (income X 60) / 100```
+- ``` splurge = (income X 10) / 100```
+- ``` smile = (income X 10) / 100```
+- ``` fire ext = (income X 20) / 100```
 
 ## Demo
 
 ![](barefoot.gif)
-
 
 ## Improvement
 
