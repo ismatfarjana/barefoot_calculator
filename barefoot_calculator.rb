@@ -47,7 +47,7 @@ print "NO".colorize(:light_red)
 puts "                            |".colorize(:light_green)
 puts "        |                                                                             |".colorize(:light_green)
 print "                                         "
-print "ANSWER:".colorize(:light_green).underline
+print "ANSWER: ".colorize(:light_green)
 answer = gets.chomp.to_s.capitalize
 puts "        |                                                                             |".colorize(:light_green)
 
@@ -56,15 +56,58 @@ puts "        |                                                                 
 if answer == "Y"
 
     print "        |".colorize(:light_green)
-    print "                    Great!!    Type your monthly income below. ".colorize(:light_white)
-    puts "              |".colorize(:light_green)
+    print "                    Great!!  Enter your monthly income below. ".colorize(:light_white)
+    puts "               |".colorize(:light_green)
+    puts "        |                                                                             |".colorize(:light_green)
 
+    print "                         " 
+    print "Monthly income: $".colorize(:green).underline
+    income = gets.chomp.to_f.round(2) 
+
+    puts "        |                                                                             |".colorize(:light_green)
+    print "        |".colorize(:light_green)
+    print "                    Calculation finished..   " .colorize(:light_white)
+    puts "                                |".colorize(:light_green)
+
+
+#################  calculation #############
+
+
+            daily_expence = (income *60)/100
+            splurge = (income*10)/100
+            smile = (income*10)/100
+            fire_extinguisher = (income*20)/100
+
+
+    ###########   outputing sting##################   
+    
+    
+    puts "        |                                                                             |".colorize(:light_green)
+    puts "        |                                                                             |".colorize(:light_green)
+    print "        |                      ".colorize(:light_green)
+    puts " Daily expence  = $#{daily_expence} ".black.on_yellow
+    
+
+    print "        |                      ".colorize(:light_green)
+    puts " Splurge        = $#{splurge}  ".colorize(:color => :black, :background => :yellow)
+
+    print "        |                      ".colorize(:light_green)
+    puts " Smile          = $#{smile}  ".colorize(:color => :black, :background => :yellow)
+
+    print "        |                      ".colorize(:light_green)
+    puts " Fire Ext       = $#{fire_extinguisher}  ".colorize(:color => :black, :background => :yellow)
+
+
+    puts "        |                                                                             |".colorize(:light_green)
+    puts "        |                                                                             |".colorize(:light_green)
 
     print "        |".colorize(:light_green)
-    print "                    Calculation started..   " .colorize(:light_white)
-    puts "                                 |".colorize(:light_green)
+    print "                THANKS FOR USING BAREFOOT BUDGET CALCULATOR                  ".black.on_light_magenta
+    puts "|".colorize(:light_green)
 
-
+    
+    
+    
 
 else answer == "N"
 
@@ -77,6 +120,10 @@ else answer == "N"
     print "        |".colorize(:light_green)
     print "                            Have a nice day                                  ".colorize(:black).on_green
     puts "|".colorize(:light_green)
+
+
+
+    
 end    
 
 
