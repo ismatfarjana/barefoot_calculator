@@ -5,15 +5,15 @@ require 'colorize'
 
 #  ~~~~~~~~~~~~~~~~~~~~heading~~~~~~~~~~~~~~
 
-puts "         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~".colorize(:light_green)
-puts "        |                                                                             |".colorize(:light_green)
-print "        |".colorize(:light_green)  
-print "                          BAREFOOT BUDGET CALCULATOR                         ".colorize(:black).on_light_cyan
+puts (" " * 9) + ("~" *75).colorize(:light_green)
+puts (" " * 8) + ("|").colorize(:light_green) + (" "* 77) + ("|").colorize(:light_green)
+print (" " * 8)+ "|".colorize(:light_green)  
+print ("." * 26).colorize(:black).on_light_cyan + "BAREFOOT BUDGET CALCULATOR".colorize(:black).on_light_cyan + ("." * 25).colorize(:black).on_light_cyan
 puts "|".colorize(:light_green)      
 #puts "        |                                                                             |".colorize(:light_green)
 
 
-print "        |".colorize(:light_green)
+print (" " * 8) + "|".colorize(:light_green)
 print "                Inspired by the book:".colorize(:light_white).on_light_black
 print "\"THE BAREFOOT INVESTOR\"                 ".colorize(:green).on_light_black
 puts "|".colorize(:light_green)
